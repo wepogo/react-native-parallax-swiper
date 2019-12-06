@@ -24,10 +24,6 @@ class ParallaxSwiper extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.scrollToIndex(nextProps.scrollToIndex);
-  }
-
   onScrollEnd(e) {
     const { vertical, onMomentumScrollEnd } = this.props;
     const contentOffset = vertical
